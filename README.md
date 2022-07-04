@@ -1,5 +1,6 @@
 # wester_ops_case
 
-A new Flutter project.
+https://api.nasa.gov/index.html#browseAPI adresinden API'yı kullanarak bir flutter uygulaması gerçekleştirdim.
 
-
+- Servis kullanımı için Dio paketini kullandım.
+- Rover araç verilerini telefon hafızasına kaydetmek için Hive paketini kullandım.
