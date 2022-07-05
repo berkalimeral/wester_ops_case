@@ -46,7 +46,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
               child: Container(
                 height: Utility.containerHeight,
                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(20)),
+                    BoxDecoration(borderRadius: BorderRadius.circular(Utility.inset)),
                 margin: const EdgeInsets.all(Utility.inset),
                 padding: const EdgeInsets.all(Utility.inset),
                 child: Column(
