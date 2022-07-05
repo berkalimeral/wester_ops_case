@@ -114,6 +114,10 @@ class _DetailPageState extends State<DetailPage> {
       widget.nasaModel.rover?.landingDate,
       widget.nasaModel.rover?.launchDate
     ]);
+    
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Saved to Favorites.')),
+    );
 
     await Future.delayed(const Duration(microseconds: 100));
 
