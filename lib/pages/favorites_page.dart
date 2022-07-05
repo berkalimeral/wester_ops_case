@@ -13,7 +13,7 @@ class FavoritesPage extends StatefulWidget {
 
 class _FavoritesPageState extends State<FavoritesPage> {
   String title = 'Favorites Page';
-  
+
   var list;
   var box;
 
@@ -62,27 +62,27 @@ class _FavoritesPageState extends State<FavoritesPage> {
                     Text(
                       "Rover Name: " + listItem[1],
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: Utility.idFontSize,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Text(
                       "Rover Status: " + listItem[2],
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: Utility.dateFontSize,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Text(
                       "Rover Landing Date: " + listItem[3],
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: Utility.dateFontSize,
                       ),
@@ -92,7 +92,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                       children: [
                         Text(
                           "Rover Launch date: " + listItem[4],
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: Utility.dateFontSize,
                           ),
@@ -103,7 +103,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                               await box.deleteAt(index);
                               setState(() {});
                             },
-                            icon: Icon(Icons.delete)),
+                            icon: const Icon(Icons.delete)),
                       ],
                     ),
                   ],
