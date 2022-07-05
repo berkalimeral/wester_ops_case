@@ -44,11 +44,11 @@ class _FavoritesPageState extends State<FavoritesPage> {
             var listItem = list[index];
             return Card(
               child: Container(
-                height: Utility.containerHeight,
+                height: Constants.containerHeight,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(Utility.inset)),
-                margin: const EdgeInsets.all(Utility.inset),
-                padding: const EdgeInsets.all(Utility.inset),
+                    borderRadius: BorderRadius.circular(Constants.inset)),
+                margin: const EdgeInsets.all(Constants.inset),
+                padding: const EdgeInsets.all(Constants.inset),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -63,28 +63,28 @@ class _FavoritesPageState extends State<FavoritesPage> {
                       "Rover Name: " + listItem[1],
                       textAlign: TextAlign.center,
                       style: const TextStyle(
-                        fontSize: Utility.idFontSize,
+                        fontSize: Constants.idFontSize,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     const SizedBox(
-                      height: Utility.sizedBoxHeight,
+                      height: Constants.sizedBoxHeight,
                     ),
                     Text(
                       "Rover Status: " + listItem[2],
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: Utility.dateFontSize,
+                        fontSize: Constants.dateFontSize,
                       ),
                     ),
                     const SizedBox(
-                      height: Utility.sizedBoxHeight,
+                      height: Constants.sizedBoxHeight,
                     ),
                     Text(
                       "Rover Landing Date: " + listItem[3],
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: Utility.dateFontSize,
+                        fontSize: Constants.dateFontSize,
                       ),
                     ),
                     Row(
@@ -94,7 +94,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                           "Rover Launch date: " + listItem[4],
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: Utility.dateFontSize,
+                            fontSize: Constants.dateFontSize,
                           ),
                         ),
                         IconButton(

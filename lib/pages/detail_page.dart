@@ -40,11 +40,11 @@ class _DetailPageState extends State<DetailPage> {
         children: [
           Card(
             child: Container(
-              height: Utility.containerHeight,
+              height: Constants.containerHeight,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(Utility.borderRadius)),
-              margin: const EdgeInsets.all(Utility.inset),
-              padding: const EdgeInsets.all(Utility.inset),
+                  borderRadius: BorderRadius.circular(Constants.borderRadius)),
+              margin: const EdgeInsets.all(Constants.inset),
+              padding: const EdgeInsets.all(Constants.inset),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [

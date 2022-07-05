@@ -46,12 +46,12 @@ class _HomePageState extends State<HomePage> {
                     },
                     child: Card(
                       child: Container(
-                        height: Utility.containerHeight,
+                        height: Constants.containerHeight,
                         decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.circular(Utility.borderRadius)),
-                        margin: const EdgeInsets.all(Utility.inset),
-                        padding: const EdgeInsets.all(Utility.inset),
+                                BorderRadius.circular(Constants.borderRadius)),
+                        margin: const EdgeInsets.all(Constants.inset),
+                        padding: const EdgeInsets.all(Constants.inset),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   nasaModel.id.toString(),
                                   style: const TextStyle(
-                                    fontSize: Utility.idFontSize,
+                                    fontSize: Constants.idFontSize,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                                   nasaModel.earthDate ?? 'Subtitle',
                                   style: const TextStyle(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: Utility.dateFontSize,
+                                    fontSize: Constants.dateFontSize,
                                   ),
                                 ),
                               ],
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-class Utility {
+class Constants {
   static const double containerHeight = 300;
   static const double inset = 5;
   static const double idFontSize = 18;
