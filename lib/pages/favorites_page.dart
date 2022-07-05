@@ -3,7 +3,7 @@ import 'package:hive/hive.dart';
 import 'package:wester_ops_case/pages/home_page.dart';
 
 class FavoritesPage extends StatefulWidget {
-  FavoritesPage({
+  const FavoritesPage({
     Key? key,
   }) : super(key: key);
 
@@ -45,8 +45,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
             return Card(
               child: Container(
                 height: Utility.containerHeight,
-                decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(Utility.inset)),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(Utility.inset)),
                 margin: const EdgeInsets.all(Utility.inset),
                 padding: const EdgeInsets.all(Utility.inset),
                 child: Column(
@@ -68,7 +68,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                       ),
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: Utility.sizedBoxHeight,
                     ),
                     Text(
                       "Rover Status: " + listItem[2],
@@ -78,7 +78,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                       ),
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: Utility.sizedBoxHeight,
                     ),
                     Text(
                       "Rover Landing Date: " + listItem[3],

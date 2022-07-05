@@ -22,7 +22,6 @@ class _DetailPageState extends State<DetailPage> {
 
   final String butonText = 'Your Favorites';
   final String labelText = 'Save to Favorites';
-  final double containerHeight = 300;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +40,7 @@ class _DetailPageState extends State<DetailPage> {
         children: [
           Card(
             child: Container(
-              height: containerHeight,
+              height: Utility.containerHeight,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(Utility.borderRadius)),
               margin: const EdgeInsets.all(Utility.inset),
@@ -81,8 +80,10 @@ class _DetailPageState extends State<DetailPage> {
               widget.nasaModel.rover?.launchDate, "Launch Date"),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => FavoritesPage()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const FavoritesPage()));
             },
             child: Text(butonText),
           )
@@ -114,15 +115,13 @@ class _DetailPageState extends State<DetailPage> {
       widget.nasaModel.rover?.landingDate,
       widget.nasaModel.rover?.launchDate
     ]);
-    
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Saved to Favorites.')),
-    );
-
-    await Future.delayed(const Duration(microseconds: 100));
 
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Saved to Favorites.')),
+      const SnackBar(
+          content: Text('Saved to Favorites.'),
+          duration: Duration(
+            milliseconds: 500,
+          )),
     );
 
     print(box.toMap());
