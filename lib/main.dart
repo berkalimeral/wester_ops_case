@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:wester_ops_case/model/nasa_modelll.dart';
 import 'package:wester_ops_case/pages/home_page.dart';
+import 'core/model/nasa_modelll.dart';
 
 Future<void> main() async {
   await Hive.initFlutter();

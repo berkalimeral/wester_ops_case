@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:wester_ops_case/pages/home_page.dart';
+import '../core/constants/constants.dart';
 
 class FavoritesPage extends StatefulWidget {
   const FavoritesPage({

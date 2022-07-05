@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:wester_ops_case/model/nasa_modelll.dart';
+import '../core/model/nasa_modelll.dart';
 
 class NasaApiServices {
   List<NasaModel> nasaModels = [];

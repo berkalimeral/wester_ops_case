@@ -1,6 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
-
-import '../model/nasa_modelll.dart';
+import '../core/model/nasa_modelll.dart';
 
 abstract class CacheManager<T> {
   final String key;

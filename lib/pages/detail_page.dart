@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:wester_ops_case/model/nasa_modelll.dart';
 import 'package:wester_ops_case/pages/favorites_page.dart';
 import 'package:wester_ops_case/pages/home_page.dart';
+
+import '../core/constants/constants.dart';
+import '../core/model/nasa_modelll.dart';
 
 class DetailPage extends StatefulWidget {
   NasaModel nasaModel;

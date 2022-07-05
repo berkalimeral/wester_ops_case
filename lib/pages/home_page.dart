@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wester_ops_case/model/nasa_modelll.dart';
+import 'package:wester_ops_case/core/model/nasa_modelll.dart';
 import 'package:wester_ops_case/service/nasa_model_service.dart';
-
+import '../core/constants/constants.dart';
 import 'detail_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -97,11 +97,3 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-class Constants {
-  static const double containerHeight = 300;
-  static const double inset = 5;
-  static const double idFontSize = 18;
-  static const double dateFontSize = 15;
-  static const double borderRadius = 20;
-  static const double sizedBoxHeight = 15;
-}
